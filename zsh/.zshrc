@@ -179,8 +179,8 @@ autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
-bindkey "$key[Up]" up-line-or-beginning-search
-bindkey "$key[Down]" down-line-or-beginning-search
+#bindkey "$key[Down]" down-line-or-beginning-search
+#bindkey "$key[Up]" up-line-or-beginning-search
 
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -192,10 +192,6 @@ compinit
 alias ls='exa'
 alias vi='nvim'
 
-source /usr/share/doc/fzf/examples/key-bindings.zsh
-
-
-source /usr/share/doc/fzf/examples/completion.zsh
 for file in ~/.config/zshcustom/*; do
     source "$file"
 done
