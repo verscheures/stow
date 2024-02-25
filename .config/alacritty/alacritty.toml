@@ -1,0 +1,14 @@
+import = ["/home/stefaan/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
+
+[selection]
+save_to_clipboard = true
+
+[shell]
+args = ["-l", "-c", "tmux attatch || tmux"]
+program = "/usr/bin/zsh"
+
+[window]
+opacity = 0.9
+dimensions = { columns = 160, lines = 42 }
+[font]
+size = 10.0
