@@ -30,7 +30,16 @@ eval "$(zoxide init zsh)"
 export CDPATH='..:~/workspace:~/Downloads:~/Documents'
 eval $(thefuck --alias)
 
+if [ -d /usr/share/doc/fzf/examples ]; then
+    source /usr/share/doc/fzf/examples/key-bindings.zsh
+    source /usr/share/doc/fzf/examples/completion.zsh
+fi
 
+
+if [ -d /usr/share/fzf ]; then
+    source /usr/share/fzf/key-bindings.zsh
+    source /usr/share/fzf/completion.zsh
+fi
 
 function ya() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
@@ -181,6 +190,7 @@ autoload -Uz compinit
 compinit
 
 alias ls='exa'
+alias vi='nvim'
 
 source /usr/share/doc/fzf/examples/key-bindings.zsh
 
