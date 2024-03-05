@@ -171,16 +171,8 @@ fi
 #
 # eval "$(zoxide init zsh)"
 
-
-
-eval "$(starship init zsh)"
-# Cycle through history based on characters already typed on the line
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-bindkey "$key[Down]" down-line-or-beginning-search
-bindkey "$key[Up]" up-line-or-beginning-search
+EDITOR=/usr/bin/nvim
+VISUAL=/usr/bin/nvim
 
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -191,7 +183,17 @@ compinit
 
 alias ls='exa'
 alias vi='nvim'
+alias tt=taskwarrior-tui
 
 for file in ~/.config/zshcustom/*; do
     source "$file"
 done
+
+# Cycle through history based on characters already typed on the line
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "$key[Down]" down-line-or-beginning-search
+bindkey "$key[Up]" up-line-or-beginning-search
+eval "$(starship init zsh)"
