@@ -1,7 +1,9 @@
 
 
 alias wttr="curl wttr.in/Brugge"
-
+alias lzg="lazygit"
+alias tskw="task +work"
+alias tskc="task +consulting"
 
 lg()
 {
