@@ -197,3 +197,6 @@ alias vi='nvim'
 for file in ~/.config/zshcustom/*; do
     source "$file"
 done
+alias copilot="gh copilot"
+alias gcs="gh copilot suggest"
+alias gce="gh copilot explain"
