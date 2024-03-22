@@ -199,3 +199,6 @@ zle -N down-line-or-beginning-search
 bindkey "$key[Down]" down-line-or-beginning-search
 bindkey "$key[Up]" up-line-or-beginning-search
 eval "$(starship init zsh)"
+alias copilot="gh copilot"
+alias gcs="gh copilot suggest"
+alias gce="gh copilot explain"
