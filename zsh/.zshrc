@@ -30,7 +30,6 @@ eval "$(zoxide init zsh)"
 
 
 export CDPATH='..:~/workspace:~/Downloads:~/Documents'
-eval $(thefuck --alias)
 
 if [ -d /usr/share/doc/fzf/examples ]; then
     source /usr/share/doc/fzf/examples/key-bindings.zsh
