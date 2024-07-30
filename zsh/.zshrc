@@ -30,7 +30,6 @@ eval "$(zoxide init zsh)"
 
 
 export CDPATH='..:~/workspace:~/Downloads:~/Documents'
-eval $(thefuck --alias)
 
 if [ -d /usr/share/doc/fzf/examples ]; then
     source /usr/share/doc/fzf/examples/key-bindings.zsh
@@ -200,3 +199,6 @@ done
 alias copilot="gh copilot"
 alias gcs="gh copilot suggest"
 alias gce="gh copilot explain"
+zstyle ':completion:*' rehash true
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

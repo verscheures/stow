@@ -1,4 +1,6 @@
-import = ["/home/stefaan/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
+#import = ["/home/stefaan/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
+import = ["/home/stefaan/.config/alacritty/tokyo-night/tokyo-night.toml"]
+
 
 [selection]
 save_to_clipboard = true
