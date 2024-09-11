@@ -201,6 +201,7 @@ eval "$(starship init zsh)"
 alias copilot="gh copilot"
 alias gcs="gh copilot suggest"
 alias gce="gh copilot explain"
+alias noksshask="export SSH_ASKPASS_REQUIRE=never"
 zstyle ':completion:*' rehash true
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
